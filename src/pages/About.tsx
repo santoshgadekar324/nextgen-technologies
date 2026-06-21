@@ -72,7 +72,17 @@ export default function About() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
           {team.map((m, i) => (
             <Reveal key={m.name} delay={i * 0.04} className="text-center">
-              <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center text-base font-mono mb-3">{m.initials}</div>
+{m.image ? (
+  <img
+    src={m.image}
+    alt={m.name}
+    className="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-2 border-primary"
+  />
+) : (
+  <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center text-base font-mono mb-3">
+    {m.initials}
+  </div>
+)}
               <div className="text-sm font-medium">{m.name}</div>
               <div className="text-xs text-slate-500 dark:text-slate-500">{m.role}</div>
             </Reveal>
