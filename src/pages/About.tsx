@@ -64,21 +64,40 @@ export default function About() {
             <div key={s.label}>
               <div className="font-mono text-2xl sm:text-3xl font-medium text-accent">{s.value}</div>
               <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1.5">{s.label}</div>
+
             </div>
           ))}
         </div>
 
-        <SectionHeading eyebrow="leadership" title="NEXTGEN TEST TEAM SECTION" description="A senior team, not a rotating cast of contractors." />
+        <SectionHeading eyebrow="leadership" title="The team behind NextGen" description="A senior team, not a rotating cast of contractors." />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {team.map((m, i) => (
             <Reveal key={m.name} delay={i * 0.04} className="text-center">
-<img
-  src="/team/dnyaneshwari.jpeg"
-  alt="Dnyaneshwari"
-  className="w-20 h-20 mx-auto rounded-full object-cover mb-3"
-/>
+{m.image ? (
+  <img
+    src={m.image}
+    alt={m.name}
+    className="w-24 h-24 mx-auto rounded-full object-cover mb-3 border-2 border-primary"
+  />
+) : (
+  <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center text-base font-mono mb-3">
+    {m.initials}
+  </div>
+)}
               <div className="text-sm font-medium">{m.name}</div>
               <div className="text-xs text-slate-500 dark:text-slate-500">{m.role}</div>
+              <p className="text-xs text-slate-400 mt-2 px-2">
+  {m.bio}
+</p>
+
+<a
+  href={m.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-400 text-xs mt-2 inline-block"
+>
+  View LinkedIn
+</a>
             </Reveal>
           ))}
         </div>
