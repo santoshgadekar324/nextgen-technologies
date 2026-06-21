@@ -75,6 +75,8 @@ export interface TeamMember {
   role: string
   bio: string
   initials: string
+  image?: string
+  linkedin?: string
 }
 
 export interface Stat {
