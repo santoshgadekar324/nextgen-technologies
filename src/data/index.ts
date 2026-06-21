@@ -674,12 +674,14 @@ name: 'Santosh Gadekar',
 role: 'Founder & CEO',
 bio: 'Founder of NextGen Technologies specializing in Software Development, Web Development, Mobile Applications, AI Solutions, Cloud Technologies, and Digital Transformation. Passionate about building innovative technology solutions for businesses.',
 initials: 'SG',
+image: '/team/santosh.jpg',
 },
 {
 name: 'Dnyaneshwari Patil',
 role: 'Manager & Operations Lead',
 bio: 'Leads business operations, project coordination, client communication, team management, and strategic growth initiatives. Dedicated to delivering excellent customer experiences and operational excellence.',
 initials: 'DP',
+image: '/team/dnyaneshwari.jpg',
 },
 ]
 
