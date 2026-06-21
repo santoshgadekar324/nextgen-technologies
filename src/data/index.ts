@@ -669,13 +669,20 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const team: TeamMember[] = [
-  { name: 'Sanjay Kulkarni', role: 'Founder & CEO', bio: 'Sets the technical and business direction, with a background spanning enterprise consulting and product engineering.', initials: 'SK' },
-  { name: 'Meera Iyer', role: 'Chief Technology Officer', bio: 'Owns engineering architecture and standards across every client project.', initials: 'MI' },
-  { name: 'Aditya Pawar', role: 'Head of Engineering', bio: 'Leads the backend and DevOps teams, with deep experience in distributed systems.', initials: 'AP' },
-  { name: 'Kavya Joshi', role: 'Lead Product Designer', bio: 'Runs research and design across the studio\u2019s client engagements.', initials: 'KJ' },
-  { name: 'Rohan Shah', role: 'AI & Machine Learning Lead', bio: 'Builds and ships the studio\u2019s production AI and LLM systems.', initials: 'RS' },
-  { name: 'Ishita Verma', role: 'QA Lead', bio: 'Owns testing strategy and quality standards for every release.', initials: 'IV' },
+{
+name: 'Santosh Gadekar',
+role: 'Founder & CEO',
+bio: 'Founder of NextGen Technologies specializing in Software Development, Web Development, Mobile Applications, AI Solutions, Cloud Technologies, and Digital Transformation. Passionate about building innovative technology solutions for businesses.',
+initials: 'SG',
+},
+{
+name: 'Dnyaneshwari Patil',
+role: 'Manager & Operations Lead',
+bio: 'Leads business operations, project coordination, client communication, team management, and strategic growth initiatives. Dedicated to delivering excellent customer experiences and operational excellence.',
+initials: 'DP',
+},
 ]
+
 
 export const faqs = [
   { question: 'How does NextGen Technologies price a project?', answer: 'Most projects are scoped as either a fixed price (for well-defined builds) or time-and-materials (for ongoing or evolving work). We share a detailed estimate after the discovery phase, before any development begins.' },
