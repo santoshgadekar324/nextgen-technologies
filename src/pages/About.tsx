@@ -68,8 +68,8 @@ export default function About() {
           ))}
         </div>
 
-        <SectionHeading eyebrow="leadership" title="The team behind NextGen" description="A senior team, not a rotating cast of contractors." />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+        <SectionHeading eyebrow="leadership" title="NEXTGEN TEST TEAM SECTION" description="A senior team, not a rotating cast of contractors." />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {team.map((m, i) => (
             <Reveal key={m.name} delay={i * 0.04} className="text-center">
 <img
