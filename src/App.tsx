@@ -15,9 +15,10 @@ import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
 import FAQ from './pages/FAQ'
 import NotFound from './pages/NotFound'
-
+import AIChatWidget from "./components/AIChatWidget"
 export default function App() {
-  return (
+ return (
+  <>
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,5 +38,8 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
-  )
+
+    <AIChatWidget />
+  </>
+)
 }
